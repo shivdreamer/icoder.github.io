@@ -1,0 +1,150 @@
+/* universal selector, Reset all css  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav-bar container  */
+
+.containernav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: grey;
+    padding: 10px;
+    z-index: 5;
+    
+}
+.containernav #left{
+    display: inline-block;
+    position: absolute;
+    top: auto;
+    left: auto;
+}
+.containernav #mid {
+    display: block;
+    width: 50%;
+    margin: auto;
+  
+}
+/* perfoem action when click toggle menubar using javascript */
+#mid.active {
+    display: block;
+}
+.containernav #right {
+    display: inline-block;
+    position: absolute;
+    top: auto;
+    right: 1rem;
+    margin: 5px;
+    z-index: 2;
+}
+
+/* right side toggle button bar */
+#right .bars{
+    display: inline-block;
+    background-color: white;
+   position: relative;
+    width: 18px;
+    height: 2px;
+    margin-bottom: 5px;
+}
+#right .toggle {
+    cursor: pointer;
+}
+
+#right .bars::before,.bars::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 18px;
+    height: 2px;
+}
+#right .bars::before {
+    margin-top: 5px;
+}
+#right .bars::after {
+    margin-top: -5px;
+}
+
+.containernav #nav {
+    display: flex;
+    list-style-type: none;
+    
+}
+.containernav #nav li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.containernav #nav li a.active {
+    color: lightgrey;
+}
+.containernav #nav li a:hover {
+    color: lightgrey;
+    transition: color 0.25s;
+}
+.containernav #right #search {
+    width: 15vw;
+    padding: 5px ;
+    border-radius: 5px;  
+    outline: none;  
+    border: 1px solid black;
+    z-index: 3;
+    
+}
+
+
+/* for nav button */
+.containernav .button {
+    width: 15vw;
+    padding: 5px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    border: 1px solid rgb(23, 150, 23);
+}
+.containernav .button:hover,.button:active {
+    background-color: rgb(43, 175, 43);
+    color: white;
+    transition: all 0.30s;
+    cursor: pointer;
+}
+ 
+
+/* login modal  */
+.login > input {
+    display: block;
+    margin-bottom: 5px;
+    width: 35vw;
+    padding-left: 5px;
+    outline: none;
+    border-radius: 5px;
+}
+.login > input:hover {
+    border: 2px solid rgb(63, 173, 63);
+}
+.login > input:focus {
+    border: 2px solid rgb(63, 173, 63);
+}
+
+/* sign up modal  */
+.signup > input {
+    display: block;
+    margin-bottom: 5px;
+    width: 35vw;
+    padding-left: 5px;
+    outline: none;
+    border-radius: 5px;
+}
+.signup > input:hover {
+    border: 2px solid rgb(63, 173, 63);
+}
+.signup > input:focus {
+    border: 2px solid rgb(63, 173, 63);
+}
+

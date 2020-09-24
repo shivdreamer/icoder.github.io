@@ -1,0 +1,113 @@
+
+    
+
+@media only screen and (max-width: 600px) {
+    .containernav {
+        height: 70px;
+    }
+    .containernav #nav{
+        flex-direction: column;
+        margin-left: auto;
+    }
+    .containernav #left h1{
+        display: inline-block;
+        font-size: 3vh;
+    }
+    .containernav #mid {
+        position: absolute;
+        top: 3.2rem;
+        left: 0;
+        background-color: grey;
+        display: none;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        
+    }
+    
+    .containernav #right {
+            display: inline-block;
+            margin: 3px;
+            justify-content: flex-end;
+           
+    }
+    .containernav #right .button {
+       margin: 0px 3px;
+       width: 20vw;
+    }
+    .containernav #right #search {
+        width: 15vw;
+        display: none;
+    }
+}
+    @media only screen and (min-width: 600px) {
+        .containernav {
+            height: 70px;
+        }
+        .containernav #nav {
+            flex-direction: column;
+            margin-left: auto;
+        }
+        .containernav #mid {
+            position: absolute;
+            top: 3.2rem;
+            left: 0;
+            background-color: grey;
+            display: none;
+            width: 100%;
+            text-align: center;
+            z-index: 1;
+            
+        }
+        .containernav #right #search {
+            display: inline-block;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        .containernav {
+            height: 70px;
+        }
+        .containernav #nav {
+            flex-direction: column;
+            margin-left: auto;
+        }
+        .containernav #mid {
+            display: block;
+            width: 100%;
+            text-align: center;
+            z-index: 1;
+        }
+
+    }
+    @media only screen and (min-width: 992px) {
+        .containernav {
+            height:80px;
+        }
+        .containernav #nav {
+            flex-direction:row;
+            margin-top: 0;
+            margin-left: 10px;
+            
+        }
+        .containernav #mid {
+            
+            position: static;
+            width: 80vw;
+        }
+        .containernav #right .button {
+            margin: 0px 3px;
+            width: 10vw;
+         }
+         .containernav #right #search {
+             width: 15vw;
+        }
+        #right .bars {
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 1200px) {
+        .containernav #mid {
+            width: 50%;
+           
+        }
+    }
